@@ -33,8 +33,6 @@ if "todos" not in state:
         Todo(text="Buy milk"),
         Todo(text="Wash dishes"),
         Todo(text="Write a novel"),
-        Todo(text="Build a house"),
-        Todo(text="Plant a tree"),
     ]
 
 
