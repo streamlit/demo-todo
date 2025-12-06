@@ -4,7 +4,7 @@ A simple to-do list written in Streamlit.
 
 ## View it in one click
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://todo.streamlit.app)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://demo-todo.streamlit.app)
 
 ## Try it on your machine
 
