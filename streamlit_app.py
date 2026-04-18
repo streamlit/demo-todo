@@ -34,10 +34,8 @@ if "todos" not in state:
     state.todos = [
         Todo(text="Transcriure Puteolanus"),
         Todo(text="*Dedicatòria"),
-        Todo(text="*Vida").is_done,
+        Todo(text="*Vida", is_done=True),
         Todo(text="*Índex"),
-        
-
     ]
 
 
