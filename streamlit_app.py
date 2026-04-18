@@ -23,10 +23,10 @@ st.set_page_config(page_title="To-do list", page_icon=":memo:")
 state = st.session_state
 
 
-@dataclass
+dataclass
 class Todo:
     text: str
-    is_done: bool = False
+    is_done: = False
     uid: uuid.UUID = field(default_factory=uuid.uuid4)
 
 
@@ -34,7 +34,7 @@ if "todos" not in state:
     state.todos = [
         Todo(text="Transcriure Puteolanus"),
         Todo(text="*Dedicatòria"),
-        Todo(text="*Vida", is_done=True),
+        Todo(text="*Vida"),
         Todo(text="*Índex"),
     ]
 
