@@ -33,10 +33,9 @@ class Todo:
 if "todos" not in state:
     state.todos = [
         Todo(text="Transcriure Puteolanus"),
-        Todo(text="  Dedicatòria"),
-        Todo(text="  Vida"),
-        Todo(text="  Vida"),
-        Todo(text="  Índex"),
+        Todo(text="*Dedicatòria"),
+        Todo(text="*Vida").is_done,
+        Todo(text="*Índex"),
         
 
     ]
