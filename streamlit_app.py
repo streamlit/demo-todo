@@ -32,9 +32,13 @@ class Todo:
 
 if "todos" not in state:
     state.todos = [
-        Todo(text="Buy milk"),
-        Todo(text="Wash dishes"),
-        Todo(text="Write a novel"),
+        Todo(text="Transcriure Puteolanus"),
+        Todo(text="  Dedicatòria"),
+        Todo(text="  Vida"),
+        Todo(text="  Vida"),
+        Todo(text="  Índex"),
+        
+
     ]
 
 
