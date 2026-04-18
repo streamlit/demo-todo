@@ -23,7 +23,7 @@ st.set_page_config(page_title="To-do list", page_icon=":memo:")
 state = st.session_state
 
 
-dataclass
+@dataclass
 class Todo:
     text: str
     is_done: bool = False
