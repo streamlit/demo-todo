@@ -23,10 +23,10 @@ st.set_page_config(page_title="To-do list", page_icon=":memo:")
 state = st.session_state
 
 
-@dataclass
+dataclass
 class Todo:
     text: str
-    is_done = False
+    is_done: bool = False
     uid: uuid.UUID = field(default_factory=uuid.uuid4)
 
 
@@ -48,8 +48,9 @@ def add_todo():
     state.new_item_text = ""
 
 
-def check_todo(i, new_value):
-    state.todos[i].is_done = new_value
+def check_todo(i):
+    # Read the checkbox's value from session_state using its key.
+    state.todos[i].is_done = state[f"todo-chk-{state.todos[i].uid}"]
 
 
 def delete_all_checked():
@@ -90,7 +91,7 @@ if state.todos:
                     value=todo.is_done,
                     width="stretch",
                     on_change=check_todo,
-                    args=[i, not todo.is_done],
+                    args=[i],
                     key=f"todo-chk-{todo.uid}",
                 )
                 st.button(
